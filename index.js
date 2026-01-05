@@ -22,4 +22,4 @@ function count(arr) {
   }
 
   return flavorMap;
-}
+} 
