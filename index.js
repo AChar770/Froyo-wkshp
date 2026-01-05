@@ -8,31 +8,18 @@ console.table(flavorChoices);
 // const flavorOption = userInput.split (",")
 console.log (flavorChoices)
 
-// function count (arr) {
-// const flavorMap = 1};
-// // start at index 0
-// // stop at the end of the array arr. length
-// // step one element/item at a time
-// for (let i = 0; i < arr. length; i++) R
-// const flavor = arrlil;
-// // if the flavor is in the flavorMap object add one to the value
-// if (flavor in flavorMap) {
-// flavorMap [flavor] += 1;
-// // otherwise assign it the value of 1.
-// } else 1
-// flavorMap [flavor] = 1;
+function count(arr) {
+  const flavorMap = {};
 
-// return the flavorMap
+  for (let i = 0; i < arr.length; i++) {
+    const flavor = arr[i].trim();
 
+    if (flavor in flavorMap) {
+      flavorMap[flavor] += 1;
+    } else {
+      flavorMap[flavor] = 1;
+    }
+  }
 
-
-
-
-// const flavorCounts = {};
-0
-
-// for (let flavor of custOrder) {
-//     if (flavorChoices[custOrder]) 
-//         {flavorChoices[custOrder]++;
-
-//     }else {(flavorChoices[custOrder]){flavorChoices[custOrder] = 1;}}}
+  return flavorMap;
+}
